@@ -1009,7 +1009,7 @@
 #if IS_2D
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95, 95 }
 #else
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 136.40 } //my esteps
 #endif
 
 /**
@@ -1286,7 +1286,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 20
+#define PROBING_MARGIN 30
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_FEEDRATE (4000)
